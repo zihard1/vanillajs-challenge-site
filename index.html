@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Challenge goals</title>
+</head>
+<body>
+    <div class="div_wrap">
+        <div class="content">
+            <div class="d1">                
+                <h1 class="clock">00:00:00</h1>
+                <div class="col align-self-end">
+                    <span class="js-weather" style="color:rgba(242,242,242,.9);"></span>
+                </div>
+            </div>
+            
+            <div class="d2">
+
+            </div>
+            
+            <div class="d3">
+                <div class="formContainer" style="padding: 30px 30px;">
+                    <form id="login-form">
+                        <div id="login-div" class="input-group mb-3">
+                            <input type="text" placeholder="What is your name?" class="form-control" />
+                            <button id="btnLogIn" class="logIn btn btn-primary">LogIn</button>
+                        </div>
+                        <div id="logout-div" class="input-group mb-3 hidden">
+                            <h4 id="greeting" class="form-control js-greetings greetings"></h4>
+                            <button id="btnLogOut" class="logOut btn btn-primary">LogOut</button>
+                        </div>
+                        <br>
+                    </form>                        
+                    <form id="todo-form">
+                        <div class="input-group mb-3 ">
+                            <input type="text" placeholder="Write a to do" class="form-control border border-light" required />
+                            <button id="btnTodo" class="logIn btn btn-primary">Add</button>
+                        </div>
+                    </form>
+                    <ul id="todo-list" style="text-align: left;">
+                    </ul>
+                </div>               
+            </div>
+        </div>        
+    </div>
+    <script src="js/background.js"></script>    
+    <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+</body>
+</html>
